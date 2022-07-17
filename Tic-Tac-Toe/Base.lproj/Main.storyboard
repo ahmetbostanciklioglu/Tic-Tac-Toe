@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tic_Tac_Toe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqm-U4-Upv">
+                                <rect key="frame" x="20" y="268.5" width="373" height="343"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="7EW-eb-jcY">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ypt-zt-Ujo">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="103"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="111" id="7IE-g8-EfC"/>
+                                                    <constraint firstAttribute="height" constant="103" id="9za-8l-0mm"/>
+                                                </constraints>
+                                                <color key="tintColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYj-ez-NH0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEE-Yd-z3J">
+                                                <rect key="frame" x="132" y="0.0" width="110" height="103"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="103" id="8Hr-gx-ycW"/>
+                                                    <constraint firstAttribute="width" constant="110" id="9e9-4x-lAB"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bi5-5P-DFr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zec-43-Mn0">
+                                                <rect key="frame" x="263" y="0.0" width="110" height="103"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="103" id="NEM-ow-3wh"/>
+                                                    <constraint firstAttribute="width" constant="110" id="k27-cN-zkx"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLL-bZ-vvp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="ATs-PH-GyU">
+                                        <rect key="frame" x="0.0" y="120" width="373" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IzR-D7-SFD">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="103"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="103" id="Gn0-Fj-QAM"/>
+                                                    <constraint firstAttribute="width" constant="111" id="sXS-FT-ktN"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xka-RZ-u4a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bho-kI-b1w">
+                                                <rect key="frame" x="132" y="0.0" width="110" height="103"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="103" id="dIZ-94-0Y4"/>
+                                                    <constraint firstAttribute="width" constant="110" id="eUs-dr-A0L"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lm4-Ri-dkZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5h-Sw-EIQ">
+                                                <rect key="frame" x="263" y="0.0" width="110" height="103"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="4Nc-AA-uCs"/>
+                                                    <constraint firstAttribute="height" constant="103" id="wqd-eP-5cs"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nG4-pk-pI7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="wB4-AB-MBG">
+                                        <rect key="frame" x="0.0" y="240" width="373" height="103"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTz-gc-XLj">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="103"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="103" id="B1y-rp-Udf"/>
+                                                    <constraint firstAttribute="width" constant="111" id="aub-sA-vSn"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WjH-rI-g4r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOZ-aS-mqc">
+                                                <rect key="frame" x="132" y="0.0" width="110" height="103"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="110" id="2Ym-aa-LGa"/>
+                                                    <constraint firstAttribute="height" constant="103" id="J1G-B0-nng"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yo9-4V-846"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Skd-Jy-Hef">
+                                                <rect key="frame" x="263" y="0.0" width="110" height="103"/>
+                                                <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="103" id="EKm-Md-eoI"/>
+                                                    <constraint firstAttribute="width" constant="110" id="R5x-20-P7v"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <connections>
+                                                    <action selector="blockClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DsC-3V-mjU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFO-N2-O6u">
+                                <rect key="frame" x="148" y="696.5" width="118" height="36"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.74117080479452058" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Tcy-rA-4Vu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="19"/>
+                                <color key="tintColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvu-XH-LhI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player turn : #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0f-gU-MW5">
+                                <rect key="frame" x="70" y="149" width="274" height="32.5"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W0f-gU-MW5" secondAttribute="trailing" constant="70" id="3OQ-N2-ilg"/>
+                            <constraint firstItem="LFO-N2-O6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="148" id="T6X-43-S6D"/>
+                            <constraint firstItem="mqm-U4-Upv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZtS-6s-xW3"/>
+                            <constraint firstItem="LFO-N2-O6u" firstAttribute="top" secondItem="mqm-U4-Upv" secondAttribute="bottom" constant="85" id="aSO-s4-0cU"/>
+                            <constraint firstItem="mqm-U4-Upv" firstAttribute="top" secondItem="W0f-gU-MW5" secondAttribute="bottom" constant="87" id="cqi-c9-QTp"/>
+                            <constraint firstItem="W0f-gU-MW5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="eQk-O4-ZFR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mqm-U4-Upv" secondAttribute="trailing" constant="21" id="fAe-e8-Sxo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LFO-N2-O6u" secondAttribute="trailing" constant="148" id="oDp-J5-K0o"/>
+                            <constraint firstItem="W0f-gU-MW5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="105" id="x7b-r0-Iut"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="block1" destination="Ypt-zt-Ujo" id="s7g-2R-lmt"/>
+                        <outlet property="block2" destination="QEE-Yd-z3J" id="9AB-vd-gmg"/>
+                        <outlet property="block3" destination="zec-43-Mn0" id="oyR-RE-34u"/>
+                        <outlet property="block4" destination="IzR-D7-SFD" id="LEr-hT-vkB"/>
+                        <outlet property="block5" destination="bho-kI-b1w" id="IrD-uW-Xtm"/>
+                        <outlet property="block6" destination="j5h-Sw-EIQ" id="lca-8i-qWe"/>
+                        <outlet property="block7" destination="zTz-gc-XLj" id="zwb-Xz-CKC"/>
+                        <outlet property="block8" destination="oOZ-aS-mqc" id="dvn-8J-ys4"/>
+                        <outlet property="block9" destination="Skd-Jy-Hef" id="Ubk-tP-Qd5"/>
+                        <outlet property="playerName" destination="W0f-gU-MW5" id="fx0-Kh-ipd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
